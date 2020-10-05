@@ -19,5 +19,8 @@
     <bool name="config_gesture_settings_enabled">true</bool>
 
     <!-- If the Storage Manager settings are enabled. -->
-    <bool name="config_storage_manager_settings_enabled">true</bool>
+    <bool name="config_storage_manager_settings_enabled">false</bool>
+
+    <!-- Whether memory from app_info_settings is available or not. -->
+    <bool name="config_show_app_info_settings_memory">true</bool>
 </resources>
