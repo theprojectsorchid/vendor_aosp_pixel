@@ -5,9 +5,7 @@ PRODUCT_PACKAGES += \
 # google-sans family
 PRODUCT_PACKAGES += \
     GoogleSans-Italic.ttf \
-    GoogleSans-Regular.ttf \
-    GoogleSansClock-Regular.ttf \
-    GoogleSansFlex-Regular.ttf
+    GoogleSans-Regular.ttf
 
 # Lustria family
 PRODUCT_PACKAGES += \
@@ -56,6 +54,22 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Barlow-Bold.ttf \
     Barlow-Medium.ttf
-
+	
+#Custom packages
+PRODUCT_PACKAGES += \
+    FontGInterOverlay \
+    FontGoogleSansOverlay \
+    FontHarmonySansOverlay \
+    FontLinotteSourceOverlay \
+    FontManropeOverlay \
+    FontOnePlusSansOverlay \
+	FontOppoSansOverlay \
+	FontMiSansOverlay \
+	FontPoppinsSourceOverlay \
+	FontRecursiveLinearOverlay \
+    FontRobotoFlexOverlay \
+    FontOneplusSlateSourceOverlay
+    
 PRODUCT_COPY_FILES += \
-    vendor/aosp/fonts/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
+    $(call find-copy-subdir-files,*,vendor/afterlife/fonts/prebuilt,$(TARGET_COPY_OUT_PRODUCT)/fonts) \
+    vendor/afterlife/fonts/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
