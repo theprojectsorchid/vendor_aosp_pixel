@@ -241,4 +241,6 @@ $(call inherit-product, vendor/pixel-framework/config.mk)
 # Themed icons
 $(call inherit-product, packages/overlays/ThemeIcons/config.mk)
 
+# OrchidOs packages
+$(call inherit-product, vendor/aosp/config/packages.mk)
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
