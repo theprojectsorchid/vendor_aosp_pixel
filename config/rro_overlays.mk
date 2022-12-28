@@ -26,4 +26,7 @@ PRODUCT_PACKAGES += \
     GoogleConfigOverlay \
     SystemUIGoogleOverlay \
     StorageManagerGoogleOverlay \
-    FlipendoOverlay
+    FlipendoOverlay \
+    AndroidBlackTheme \
+    AndroidClearTheme \
+    AndroidVividTheme
