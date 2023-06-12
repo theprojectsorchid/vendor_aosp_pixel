@@ -227,4 +227,7 @@ $(call inherit-product, vendor/pixel-framework/config.mk)
 
 # OrchidOs packages
 $(call inherit-product, vendor/aosp/config/packages.mk)
+
+# OrchidOs packages
+$(call inherit-product, vendor/aosp/config/props.mk)
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
