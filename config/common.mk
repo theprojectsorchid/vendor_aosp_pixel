@@ -207,6 +207,7 @@ PRODUCT_PACKAGES += \
 # Audio
 $(call inherit-product, vendor/aosp/config/audio.mk)
 
+include vendor/arrow/addons/config.mk
 # Bootanimation
 $(call inherit-product, vendor/aosp/config/bootanimation.mk)
 
@@ -230,4 +231,8 @@ $(call inherit-product, vendor/aosp/config/packages.mk)
 
 # OrchidOs packages
 $(call inherit-product, vendor/aosp/config/props.mk)
+
+# OrchidOs packages
+$(call inherit-product, vendor/aosp/addons/config.mk)
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
