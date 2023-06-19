@@ -195,7 +195,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 TARGET_SUPPORTS_GOOGLE_RECORDER ?= true
 TARGET_INCLUDE_STOCK_ARCORE ?= true
 TARGET_INCLUDE_LIVE_WALLPAPERS ?= true
-TARGET_SUPPORTS_QUICK_TAP ?= false
+TARGET_SUPPORTS_QUICK_TAP ?= true
 TARGET_SUPPORTS_CALL_RECORDING ?= true
 
 # Face Unlock
@@ -246,4 +246,9 @@ $(call inherit-product, vendor/aosp/config/packages.mk)
 
 # OrchidOs packages
 $(call inherit-product, vendor/aosp/config/props.mk)
+
+
+# OrchidOs packages
+$(call inherit-product, vendor/aosp/config/lowram.mk)
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
