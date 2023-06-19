@@ -235,4 +235,7 @@ $(call inherit-product, vendor/aosp/config/props.mk)
 # OrchidOs packages
 $(call inherit-product, vendor/aosp/addons/config.mk)
 
+# OrchidOs packages
+$(call inherit-product, vendor/aosp/config/lowram.mk)
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
