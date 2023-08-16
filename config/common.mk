@@ -262,4 +262,7 @@ PRODUCT_PACKAGES += \
 # OrchidOs packages
 $(call inherit-product, packages/overlays/ThemeIcons/config.mk)
 
+# OrchidOs packages
+$(call inherit-product, vendor/aosp/config/themes.mk)
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
