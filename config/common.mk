@@ -203,7 +203,6 @@ PRODUCT_PACKAGES += \
 # Audio
 $(call inherit-product, vendor/aosp/config/audio.mk)
 
-include vendor/arrow/addons/config.mk
 # Bootanimation
 $(call inherit-product, vendor/aosp/config/bootanimation.mk)
 
