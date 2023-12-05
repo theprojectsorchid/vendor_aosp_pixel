@@ -253,4 +253,9 @@ $(call inherit-product, vendor/aosp/config/lowram.mk)
 
 # OrchidOs packages
 $(call inherit-product, vendor/aosp/lawnchair/lawnchair.mk)
+
+# BtHelper
+PRODUCT_PACKAGES += \
+    BtHelper
+    
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
