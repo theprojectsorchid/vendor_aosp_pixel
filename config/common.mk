@@ -258,4 +258,8 @@ $(call inherit-product, vendor/aosp/lawnchair/lawnchair.mk)
 PRODUCT_PACKAGES += \
     BtHelper \
     ParanoidGlyph
+    
+# OrchidOs packages
+$(call inherit-product, packages/overlays/ThemeIcons/config.mk)
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
