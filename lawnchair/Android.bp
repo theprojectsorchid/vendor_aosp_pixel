@@ -1,0 +1,31 @@
+android_app_import {
+    name: "Lawnchair",
+    apk: "priv-app/Lawnchair/Lawnchair.apk",
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+    overrides: ["Home", "Launcher2", "Launcher3", "Launcher3QuickStep"],
+}
+
+android_app_import {
+        name: "Lawnicons",
+        apk: "priv-app/Lawnchair/Lawnicons.apk",
+        presigned: true,
+        dex_preopt: {
+                enabled: false,
+        },
+        product_specific: true,
+        optional_uses_libs: ["androidx.window.extensions", "androidx.window.sidecar"],
+}
+
+android_app_import {
+    name: "delta",
+    apk: "priv-app/Lawnchair/delta.apk",
+    dex_preopt: {
+        enabled: false,
+    },
+    presigned: true,
+}
