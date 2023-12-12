@@ -256,7 +256,6 @@ $(call inherit-product, vendor/aosp/lawnchair/lawnchair.mk)
 
 # BtHelper
 PRODUCT_PACKAGES += \
-    BtHelper \
     ParanoidGlyph
     
 # OrchidOs packages
